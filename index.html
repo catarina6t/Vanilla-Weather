@@ -16,19 +16,27 @@
   </head>
   <body>
     <div class="container">
+      <div class="weather-app-wrapper">
       <div class="weather-app">
+        <div class="overview">
       <h1>New York</h1>
       <ul>
         <li>Friday 05:00</li>
         <li>Clear</li>
       </ul>
+    </div>
       <div class="row">
         <div class="col-6">
+          <div class="clearfix weather-temperature">
           <img
             src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
-            alt="Clear"
+            alt="Clear" class="float-left"
           />
-          12ºC | ºF
+          <div class="float-left">
+          <strong>12</strong> 
+          <span class="units">ºC | <a href="#">ºF</a> </span> 
+           </div>
+          </div>
         </div>
         <div class="col-6">
           <ul>
@@ -38,13 +46,13 @@
           </ul>
         </div>
       </div>   
+    </div>
          <small>
         <a href="https://github.com/catarina6t" target="_blank"></a>
           Open-source code</a
         >, by Catarina Torres</small>
-      </div>
-
-    </div>
+  </div>
+</div>
     <script src="src/app.js"></script>
   </body>
 </html>

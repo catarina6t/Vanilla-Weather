@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" class="css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
@@ -24,7 +28,7 @@
                             <input type="search" placeholder="Type a city..." class="form-control" id="city-input" autocomplete="off">
                     </div>
                     <div class="col-3">
-                        <input type="submit" value="Search" class="btn btn-primary">
+                        <input type="submit" value="Search" class="btn btn-primary" id="search-button">
                     </div>
                 </div>
 
@@ -32,11 +36,11 @@
                 </form>
 
                 <div class="overview">
-                    <h1 id="city"></h1>
-                    <ul>
-                        <li>Last updated: <span id="date"></span> </li>
-                        <li id="description"></li>
-                    </ul>
+                    <br>
+                    <h1 id="city">
+
+                    </h1>
+
                 </div>
                 <div class="row">
                     <div class="col-6">
@@ -50,6 +54,8 @@
                             </div>
                         </div>
                     </div>
+
+
                     <div class="col-6">
                         <ul>
 
@@ -59,8 +65,13 @@
                     </div>
                 </div>
             </div>
-            <small>
-        <a href="https://github.com/catarina6t" target="_blank">Open-source code </a>
+            <ul>
+                <li>Last updated: <span id="date"></span> </li>
+                <li id="description"></li>
+            </ul>
+            <small id="small">
+
+        <a href="https://github.com/catarina6t" id="link" target="_blank">Open-source code </a>
           , by Catarina Torres</small>
         </div>
     </div>

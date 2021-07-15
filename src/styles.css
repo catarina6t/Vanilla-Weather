@@ -1,9 +1,44 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    line-height: 20px;
+}
+
+.container {
+    font-family: "Roboto", sans-serif;
+    font-weight: 120;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #eef5fd;
+    border-style: solid;
+    border-color: #9dc3d6;
+    border-radius: 20px;
+}
+
+.container:hover {
+    background-color: #eef5fd;
+    border-color: #9dc3d6;
+    transition: all ease-in-out 800ms;
+}
+
+#small {
+    float: right;
+    width: 300px;
+    color: #548ca8;
+}
+
+#link {
+    color: #548ca8;
 }
 
 h1 {
-    color: #878787;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
     font-size: 24px;
     font-weight: 100;
     line-height: 28px;
@@ -20,7 +55,7 @@ li {
     list-style: none;
     margin: 0;
     padding: 0;
-    color: rgb(135, 135, 135);
+    color: #344358;
     font-size: 16px;
     font-weight: 100;
     line-height: 19px;
@@ -32,17 +67,38 @@ li:first-letter {
 
 .weather-app-wrapper {
     max-width: 600px;
-    margin: 30px auto;
+    margin: 10px auto;
 }
 
 .weather-app {
     padding: 20px;
-    border: 1px solid #dadde1;
     border-radius: 5px;
 }
 
 .overview {
+    color: rgb(55, 63, 81);
     margin-bottom: 20px;
+}
+
+#row {
+    top: 40px;
+}
+
+#search-button {
+    background-color: #548ca8;
+    border-style: solid;
+    border-color: #548ca8;
+}
+
+#search-button:hover {
+    background-color: #558ca8;
+    border-style: 2pc solid;
+    border-color: #558ca8;
+}
+
+#city-input {
+    background-color: transparent;
+    border-color: #558ca8;
 }
 
 .weather-temperature img {
@@ -52,7 +108,7 @@ li:first-letter {
 }
 
 .weather-temperature strong {
-    color: rgb(35, 35, 35);
+    color: rgb(55, 63, 81);
     font-size: 64px;
     line-height: 1;
     font-weight: 400;
@@ -65,7 +121,7 @@ li:first-letter {
 }
 
 .weather-temperature .active {
-    color: rgb(35, 35, 35);
+    color: rgb(55, 63, 81);
     cursor: default;
 }
 
